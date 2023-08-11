@@ -1,6 +1,21 @@
+
+# class AbstractBaseClass:
+
+#     def add(self):
+#         pass
+    
+#     def subtract(self):
+#         pass
+
+#     def multiply(self):
+#         pass
+
+#     def divide(self):
+#         pass
+
 class Calcultion():
 
-    def __init__(self,num1,num2) :
+    def __init__(self,num1,num2):
         self.num1=num1
         self.num2=num2
 

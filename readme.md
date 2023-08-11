@@ -1,36 +1,27 @@
-Problem Statement: NumberAdder Application
+# Basic Calculator and Reversed ASCII Values
 
-1. The NumberAdder application allows the user to add a specified number of numbers together.
-2. The user first inputs the number of times they want to add numbers.
-3. Then, the user provides the numbers one by one, limited to the specified count.
-4. The application calculates and returns the sum of these numbers.
+This program takes two 3-digit numbers from the user, performs basic calculator calculations (addition, subtraction, multiplication, and division) on these numbers, and also calculates the ASCII values of their reversed digits. The results are presented in a formatted matrix.
 
-How to Use:
+## Features
 
-1. Run the main.py script in your Python environment.
-2. The application will prompt you to enter the number of times you want to add numbers.
-3. Please enter a positive integer greater than zero as the count.
-4. After entering the count, the application will prompt you to input numbers one by one, equal to the specified count.
-5. Please enter valid integers for each input.
-6. The application will display the sum of the entered numbers in integer format.
+1. **Three-Digit Number Validation**: The program ensures that the user provides only valid 3-digit numbers. Numbers that are not 3 digits long are rejected.
 
-Different Approaches:
+2. **Basic Calculator Calculations**: The program performs basic calculator calculations (addition, subtraction, multiplication, and division) on the two entered 3-digit numbers.
 
-<>Single Class Approach (main.py):
+3. **Reversed ASCII Values**: For each of the entered numbers, the program calculates the reversed ASCII values of the digits and presents the sum of these reversed ASCII values.
 
-1. The single class approach uses the NumberAdder class defined in the main.py file.
-2. The NumberAdder class encapsulates the functionality of the application.
-3. It includes methods for getting the count of numbers, getting the numbers from the user, and calculating the sum.
-4. The main logic of the program is inside the if __name__ == "__main__": block in main.py.
+4. **Formatted Result Matrix**: The results are displayed in a matrix format for better readability.
 
-<>Modular Approach (number_adder.py and main.py):
+## How to Use
 
-1. The modular approach splits the functionality into separate files.
-2. The NumberAdder class is defined in the number_adder.py file.
-3. The number_adder.py file acts as a module containing the class definition.
-4. The main script main.py imports the NumberAdder class from number_adder.py and utilizes its methods to achieve the application's functionality.
-5. This approach promotes code modularity and reusability.
+1. Run the `main.py` script.
+2. The program will prompt you to enter the first 3-digit number. If the input is valid, it will then prompt you to enter the second 3-digit number.
+3. After both valid numbers are entered, the program will calculate the basic calculator results and reversed ASCII values.
+4. The calculated results will be displayed in a formatted matrix.
+5. The program will ask if you want to continue. If you answer 'Yes', the process will repeat for additional iterations.
 
-Dependencies:
+## Note
 
-1. The NumberAdder application requires Python 3.x to run.
+- If you enter a number that is not 3 digits long, the program will prompt you to enter a valid number again.
+- The program calculates the reversed ASCII values of individual digits of the numbers and presents the sum of these values.
+
