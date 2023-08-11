@@ -6,10 +6,9 @@ class ThreeDigitNumberChecker:
         while True:
             try:
                 self.number=int(input("Enter a 3-digit number: "))
-                # self.num1=int(input("Enter a 3-digit number1: "))
-                # self.num2=int(input("Enter a 3-digit number2: "))
+                
                 if 100<=(self.number)<=999:
-                    break
+                    return self.number
                 else: 
                     print("Please enter a 3-digit number")
             except ValueError:
