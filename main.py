@@ -37,31 +37,20 @@ class BaseProgram():
                 break
                     
     # method: printing the result
-    def print_result(self):    
-            print("Result Matrix: ")
-            for row in self.result:
-                print("\n".join(row))
-                
+    print_result=lambda self: (
+        print("Result Matrix: "),
+        [print("\n".join(row),"\n") for row in self.result],
+    )
         
     # method: asking for continue
-    def ask_to_continue(self):
-        choice=input("Do you want to continue? Yes or No ")
-        return choice.lower()=='yes'
-        
-            
-        
-    # def get_number_from_user(self):
-    #     return int(input("Enter a number: "))
+    ask_to_continue=lambda self: input("Do you want to continue? Yes or No").lower()=="yes" 
     
-    # def check_three_digit(self,number):
-    #     return 100<=number<=999
-            
-
 
 if __name__=='__main__':
     program=BaseProgram()
     program.main()
-
-# choice=input("Do you want to continue? (Yes/no)")
-# if choice.lower=='yes':
-#     main()
+      
+            
+        
+    
+            
